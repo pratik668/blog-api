@@ -1,0 +1,1830 @@
+{
+	"info": {
+		"_postman_id": "4f750e66-aa24-404b-adaa-4ae3e598c6d2",
+		"name": "blogApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"testUser3\",\r\n    \"email\":\"test3@gmail.com\",\r\n    \"password\":\"pass3\",\r\n    \"about\":\"third user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"435f\",\r\n    \"email\":\"fe@gmail.com\",\r\n    \"password\":\"pass3\",\r\n    \"about\":\"cwjv user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:14:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Success\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 103,\n        \"name\": \"435f\",\n        \"email\": \"fe@gmail.com\",\n        \"password\": \"pass3\",\n        \"about\": \"cwjv user\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:15:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Success\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"testUser\",\n            \"email\": \"test@gmail.com\",\n            \"password\": \"123\",\n            \"about\": \"first user\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"testUser3updated\",\n            \"email\": \"test3@gmail.com\",\n            \"password\": \"pass3updated\",\n            \"about\": \"third user\"\n        },\n        {\n            \"id\": 52,\n            \"name\": \"testUser0\",\n            \"email\": \"test1@gmail.com\",\n            \"password\": \"pass678h\",\n            \"about\": \"45 user\"\n        },\n        {\n            \"id\": 102,\n            \"name\": \"rsk\",\n            \"email\": \"668qw@gmail.com\",\n            \"password\": \"rniebi43\",\n            \"about\": \"de e dbqbehi iwq 3ebhew  xb\"\n        },\n        {\n            \"id\": 103,\n            \"name\": \"435f\",\n            \"email\": \"fe@gmail.com\",\n            \"password\": \"pass3\",\n            \"about\": \"cwjv user\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/users/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get user by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/users/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:17:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Success\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"testUser3updated\",\n        \"email\": \"test3@gmail.com\",\n        \"password\": \"pass3updated\",\n        \"about\": \"third user\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"testUser3updated\",\r\n    \"email\":\"test3@gmail.com\",\r\n    \"password\":\"pass3updated\",\r\n    \"about\":\"third user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"testUser3updated\",\r\n    \"email\":\"test3@gmail.com\",\r\n    \"password\":\"23d32d\",\r\n    \"about\":\"third user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:18:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Success\",\n    \"success\": true,\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"testUser3updated\",\n        \"email\": \"test3@gmail.com\",\n        \"password\": \"23d32d\",\n        \"about\": \"third user\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/users/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:18:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "add category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryTitle\":\"test\",\r\n    \"categoryDescription\":\"cayDescription\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/categories/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add category",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryTitle\":\"test32\",\r\n    \"categoryDescription\":\"ca2Description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:21:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 8,\n    \"categoryTitle\": \"test32\",\n    \"categoryDescription\": \"ca2Description\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryTitle\":\"test22\",\r\n    \"categoryDescription\":\"cayDescription\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/categories/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update category",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryTitle\":\"test22\",\r\n    \"categoryDescription\":\"cayDescription\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:21:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"categoryTitle\": \"test22\",\n    \"categoryDescription\": \"cayDescription\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get all category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/categories/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/categories/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:21:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"categoryTitle\": \"test22\",\n        \"categoryDescription\": \"cayDescription\"\n    },\n    {\n        \"id\": 2,\n        \"categoryTitle\": \"tes11t\",\n        \"categoryDescription\": \"2yDescription\"\n    },\n    {\n        \"id\": 3,\n        \"categoryTitle\": \"tes11t\",\n        \"categoryDescription\": \"2yDescription\"\n    },\n    {\n        \"id\": 4,\n        \"categoryTitle\": \"tes11t\",\n        \"categoryDescription\": \"2yDescription\"\n    },\n    {\n        \"id\": 5,\n        \"categoryTitle\": \"tes11t\",\n        \"categoryDescription\": \"2yDescription\"\n    },\n    {\n        \"id\": 6,\n        \"categoryTitle\": \"tes11t\",\n        \"categoryDescription\": \"2yDescription\"\n    },\n    {\n        \"id\": 7,\n        \"categoryTitle\": \"test32\",\n        \"categoryDescription\": \"ca2Description\"\n    },\n    {\n        \"id\": 8,\n        \"categoryTitle\": \"test32\",\n        \"categoryDescription\": \"ca2Description\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get category by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/categories/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get category by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:22:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"categoryTitle\": \"test22\",\n    \"categoryDescription\": \"cayDescription\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"first post\",\r\n    \"content\":\"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/1/category/1/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1",
+						"category",
+						"1",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"56as post\",\r\n    \"content\":\"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/user/3/category/1/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"3",
+								"category",
+								"1",
+								"posts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:22:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"postId\": 52,\n    \"title\": \"56as post\",\n    \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n    \"imageName\": \"default.png\",\n    \"addedDate\": \"2024-01-30\",\n    \"category\": {\n        \"id\": 1,\n        \"categoryTitle\": \"test22\",\n        \"categoryDescription\": \"cayDescription\"\n    },\n    \"user\": {\n        \"id\": 3,\n        \"name\": \"testUser3updated\",\n        \"email\": \"test3@gmail.com\",\n        \"password\": \"23d32d\",\n        \"about\": \"third user\"\n    },\n    \"comments\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "post by postId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/posts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post by postId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/posts/52",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"posts",
+								"52"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:23:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"postId\": 52,\n    \"title\": \"56as post\",\n    \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n    \"imageName\": \"default.png\",\n    \"addedDate\": \"2024-01-30\",\n    \"category\": {\n        \"id\": 1,\n        \"categoryTitle\": \"test22\",\n        \"categoryDescription\": \"cayDescription\"\n    },\n    \"user\": {\n        \"id\": 3,\n        \"name\": \"testUser3updated\",\n        \"email\": \"test3@gmail.com\",\n        \"password\": \"23d32d\",\n        \"about\": \"third user\"\n    },\n    \"comments\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "post by categoryId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/category/1/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"category",
+						"1",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post by categoryId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/category/1/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1",
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:24:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"postId\": 52,\n        \"title\": \"56as post\",\n        \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n        \"imageName\": \"default.png\",\n        \"addedDate\": \"2024-01-30\",\n        \"category\": {\n            \"id\": 1,\n            \"categoryTitle\": \"test22\",\n            \"categoryDescription\": \"cayDescription\"\n        },\n        \"user\": {\n            \"id\": 3,\n            \"name\": \"testUser3updated\",\n            \"email\": \"test3@gmail.com\",\n            \"password\": \"23d32d\",\n            \"about\": \"third user\"\n        },\n        \"comments\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post by userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user/1/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post by userId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/user/3/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"3",
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:25:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"postId\": 5,\n        \"title\": \"4th post\",\n        \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n        \"imageName\": \"default.png\",\n        \"addedDate\": \"2024-01-30\",\n        \"category\": {\n            \"id\": 6,\n            \"categoryTitle\": \"tes11t\",\n            \"categoryDescription\": \"2yDescription\"\n        },\n        \"user\": {\n            \"id\": 3,\n            \"name\": \"testUser3updated\",\n            \"email\": \"test3@gmail.com\",\n            \"password\": \"23d32d\",\n            \"about\": \"third user\"\n        },\n        \"comments\": []\n    },\n    {\n        \"postId\": 52,\n        \"title\": \"56as post\",\n        \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n        \"imageName\": \"default.png\",\n        \"addedDate\": \"2024-01-30\",\n        \"category\": {\n            \"id\": 1,\n            \"categoryTitle\": \"test22\",\n            \"categoryDescription\": \"cayDescription\"\n        },\n        \"user\": {\n            \"id\": 3,\n            \"name\": \"testUser3updated\",\n            \"email\": \"test3@gmail.com\",\n            \"password\": \"23d32d\",\n            \"about\": \"third user\"\n        },\n        \"comments\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/posts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete post",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/posts/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"posts",
+								"5"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:26:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "search post by title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/posts/search/post",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"search",
+						"post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search post by title",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/posts/search/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"posts",
+								"search",
+								"post"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:45:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"postId\": 52,\n        \"title\": \"56as post\",\n        \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n        \"imageName\": \"default.png\",\n        \"addedDate\": \"2024-01-30\",\n        \"category\": {\n            \"id\": 1,\n            \"categoryTitle\": \"test22\",\n            \"categoryDescription\": \"cayDescription\"\n        },\n        \"user\": {\n            \"id\": 3,\n            \"name\": \"testUser3updated\",\n            \"email\": \"test3@gmail.com\",\n            \"password\": \"23d32d\",\n            \"about\": \"third user\"\n        },\n        \"comments\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "pagination and sorting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "pagination and sorting",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/posts?pageSize=10&sortBy=title&sortDir=dsc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "sortDir",
+									"value": "dsc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 14:46:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"postId\": 103,\n            \"title\": \"ueiw post\",\n            \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n            \"imageName\": \"default.png\",\n            \"addedDate\": \"2024-01-30\",\n            \"category\": {\n                \"id\": 1,\n                \"categoryTitle\": \"test22\",\n                \"categoryDescription\": \"cayDescription\"\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"testUser3updated\",\n                \"email\": \"test3@gmail.com\",\n                \"password\": \"23d32d\",\n                \"about\": \"third user\"\n            },\n            \"comments\": []\n        },\n        {\n            \"postId\": 104,\n            \"title\": \"aaai post\",\n            \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n            \"imageName\": \"default.png\",\n            \"addedDate\": \"2024-01-30\",\n            \"category\": {\n                \"id\": 1,\n                \"categoryTitle\": \"test22\",\n                \"categoryDescription\": \"cayDescription\"\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"testUser3updated\",\n                \"email\": \"test3@gmail.com\",\n                \"password\": \"23d32d\",\n                \"about\": \"third user\"\n            },\n            \"comments\": []\n        },\n        {\n            \"postId\": 102,\n            \"title\": \"873 post\",\n            \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n            \"imageName\": \"default.png\",\n            \"addedDate\": \"2024-01-30\",\n            \"category\": {\n                \"id\": 1,\n                \"categoryTitle\": \"test22\",\n                \"categoryDescription\": \"cayDescription\"\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"testUser3updated\",\n                \"email\": \"test3@gmail.com\",\n                \"password\": \"23d32d\",\n                \"about\": \"third user\"\n            },\n            \"comments\": []\n        },\n        {\n            \"postId\": 52,\n            \"title\": \"56as post\",\n            \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n            \"imageName\": \"default.png\",\n            \"addedDate\": \"2024-01-30\",\n            \"category\": {\n                \"id\": 1,\n                \"categoryTitle\": \"test22\",\n                \"categoryDescription\": \"cayDescription\"\n            },\n            \"user\": {\n                \"id\": 3,\n                \"name\": \"testUser3updated\",\n                \"email\": \"test3@gmail.com\",\n                \"password\": \"23d32d\",\n                \"about\": \"third user\"\n            },\n            \"comments\": []\n        }\n    ],\n    \"pageNumber\": 0,\n    \"pageSize\": 10,\n    \"totalElements\": 4,\n    \"totalPages\": 1,\n    \"lastPage\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "upload img in post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Pratik/OneDrive/Pictures/Camera Roll/Screenshot_20180710-020753.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/post/image/upload/52",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"image",
+						"upload",
+						"52"
+					],
+					"query": [
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "upload img in post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Pratik/OneDrive/Pictures/Camera Roll/Screenshot_20180710-020753.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/post/image/upload/52",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"image",
+								"upload",
+								"52"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 17:58:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"postId\": 52,\n    \"title\": \"56as post\",\n    \"content\": \"jdsvv shvj,ewF JKILvayFEQ 324587FHb<j DHVJvdsvdfsvhsdvysvhjscvhjfvs\",\n    \"imageName\": \"39201b45-04e6-4a9f-bb0d-4f92528a5642.png\",\n    \"addedDate\": \"2024-01-30\",\n    \"category\": {\n        \"id\": 1,\n        \"categoryTitle\": \"test22\",\n        \"categoryDescription\": \"cayDescription\"\n    },\n    \"user\": {\n        \"id\": 3,\n        \"name\": \"testUser3updated\",\n        \"email\": \"test3@gmail.com\",\n        \"password\": \"23d32d\",\n        \"about\": \"third user\"\n    },\n    \"comments\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "get img",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/post/image/39201b45-04e6-4a9f-bb0d-4f92528a5642.png",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"image",
+						"39201b45-04e6-4a9f-bb0d-4f92528a5642.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add comment to post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\"new cmr-dvhjwefdvfgvdgvsGJVuk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/post/103/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"103",
+						"comments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add comment to post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\":\"6nd cmt-dasdvV cmr-dvhjwefdvfgvdgvsGJVuk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/post/103/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"post",
+								"103",
+								"comments"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 18:37:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"content\": \"6nd cmt-dasdvV cmr-dvhjwefdvfgvdgvsGJVuk\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/comments/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete comment",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/comments/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comments",
+								"2"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 30 Jan 2024 18:38:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"pratik\",\r\n    \"password\": \"pass3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"pratik\",\r\n    \"password\": \"pass3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 Jan 2024 21:28:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmF0aWsiLCJleHAiOjE3MDY3NTQ1MDUsImlhdCI6MTcwNjczNjUwNX0.rc1N6JLuKLAhsVW-GG6Z9ykt6R5rptlZdxLO-rVDc06v8HbcTQSIA8Ua2ss3N9hoSIdBD_6xaSx3I6q8rOrP0w\",\n    \"user\": {\n        \"id\": 103,\n        \"name\": \"pratik\",\n        \"email\": \"fe@gmail.com\",\n        \"password\": \"$2a$10$0.QF.WLnFjPih.Q5G29Dn.fHLrrhBMOkH3w5mMz/qGk0ms5.G/ARy\",\n        \"about\": \"cwjv user\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Register User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pratikn\",\r\n    \"email\": \"npratik@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"about\": \"user registered\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 06:59:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 152,\n    \"name\": \"pratikn\",\n    \"email\": \"npratik@gmail.com\",\n    \"password\": \"$2a$10$ilScaGJ5NLKrxTfK8sb44eycZtqCLg.dv5THCh6BdjhY9zg5AQdtO\",\n    \"about\": \"user registered\"\n}"
+				}
+			]
+		},
+		{
+			"name": "current-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJub3JtYWwiLCJleHAiOjE3MDY3ODg3MjMsImlhdCI6MTcwNjc3MDcyM30.8lx3EDwoYqVvkuwd34NbdkNKk6gT6z9N3ykBIa7_nLlaimgkrlQJOSDZJwR2OoxTX_S3WbC7-T-gY0bKTiglzg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/auth/current-user/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"current-user",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "current-user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/auth/current-user/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"current-user",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Feb 2024 07:00:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"normal\",\n    \"email\": \"test1@gmail.com\",\n    \"password\": \"$2a$10$hoWTpPtrc1lQPXktSxueZead0jf7U.MOFTeQRxAueYfFRCpUO4Xku\",\n    \"about\": \"normal user\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v3/api-docs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v3",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
